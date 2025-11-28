@@ -1,0 +1,33 @@
+Download AWS CLI if not already
+-get your IAM access key and secrete access key from admin
+Configure aws
+-command: aws configure
+
+Check configuration:
+-command: aws sts get-caller-identity
+
+list S3 buckets
+-command: aws s3 ls
+
+list objects in a specific buckets
+-command: aws s3 ls s3://bucket-name
+
+Create a new bucket using mb(make bucket)
+-command: aws s3 mb
+
+upload a file form local to s3 bucket using cp(copy)
+-command: aws s3 cp local-path s3://bucket-name
+
+download a file from s3 to local
+-command: aws s3 cp s3://bucket-name/object-name local-filename
+
+Delete a object/file form a s3 bucket using rm(remove)
+-command: aws s3 rm s3://bucket-name/filename
+
+Delete a entire bucket from s3 using rb(remove bucket)
+-command: aws s3 rb s3://bucket-name
+
+
+
+
+
